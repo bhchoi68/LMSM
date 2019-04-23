@@ -15,8 +15,8 @@ U_NS_L = ((1+r)*b*y_L)/r;
 U_NS_H = ((1+r)*b*y_H)/r;
 
 %utillity functions for both types
-U_L = @(x) ((r+delta_L)*(1-pbar_L(x))*b*y_L+pbar_L(x)*x*(1+r))/(r+delta_L+(1-delta_L)*pbar_L(x));
-U_H = @(x) ((r+delta_H)*(1-pbar_H(x))*b*y_H+pbar_H(x)*x*(1+r))/(r+delta_H+(1-delta_H)*pbar_H(x));
+U_L = @(x) ( (r+delta_L)*(1-pbar_L(x))*b*y_L+pbar_L(x)*x*(1+r) )/( r+delta_L+(1-delta_L)*pbar_L(x));
+U_H = @(x) ( (r+delta_H)*(1-pbar_H(x))*b*y_H+pbar_H(x)*x*(1+r) )/( r+delta_H+(1-delta_H)*pbar_H(x));
 
 
 %Caveats: theta might be negative. First we know theta is a decreasing
